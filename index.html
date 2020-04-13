@@ -3,20 +3,617 @@
   <head>
     <meta charset="UTF-8" />
     <title>tsung yu</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- jquery.easings.min.js 用於easing 參數，也可以使用完整的jQuery UI 代替，如果不需要設置easing 參數，可去掉改文件-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"></script>
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
   </head>
   <body>
-    <div class="homeimg">
-      <img src="img/2019731_190802_0015.jpg" alt="" />
-    </div>
+    <div>
+      <div class="vertical-line">
+        <div style="left: 5vw;"></div>
+        <div style="left: 20vw;"></div>
+        <div style="left: 35vw;"></div>
+        <div style="left: 50vw;"></div>
+        <div style="left: 65vw;"></div>
+        <div style="left: 80vw;"></div>
+        <div style="left: 95vw;"></div>
+      </div>
+      <div class="menu">
+        <div class="menu-icon">
+          <div style="width: 3vw;"></div>
+          <div style="width: 2vw;"></div>
+          <div style="width: 2.5vw;"></div>
+        </div>
+        <div class="menu-content">
+          <a class="nav__item active" href="#firstPage">
+            <div>
+              <p>About</p>
+            </div>
+          </a>
+          <a class="nav__item" href="#secondPage">
+            <div>
+              <p>APP</p>
+            </div>
+          </a>
+          <a class="nav__item" href="#thirdPage">
+            <div>
+              <p>Web</p>
+            </div>
+          </a>
+          <!-- <a class="nav__item" href="#fourthPage">
+            <div>
+              <p>Game</p>
+            </div>
+          </a> -->
+        </div>
+      </div>
 
-    <div class="homeContent">
-      <div>
-        <p>Profolio</p>
-        <a href="#">next -></a>
+      <div class="right-link">
+        <a href="https://github.com/TsungYuChien?tab=repositories">
+          <div>
+            <img src="img/icons8-github-48.png" alt="" />
+          </div>
+        </a>
+        <br />
+        <a href="https://issuu.com/tsungyu0927/docs/portfolio_organized">
+          <div>
+            <img src="img/icons8-issuu-48.png" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <!-- -------------------------------------- -->
+      <div id="dowebok">
+        <div class="section">
+          <div class="MyDetail">
+            <div class="MyDetail-name-back">
+              <div class="col-1">
+                <p>CHIEN TSUNG YU</p>
+              </div>
+              <div class="col-2">
+                <p>簡琮育</p>
+              </div>
+              <div class="col-3">
+                <p>APP x WEB x GAME</p>
+              </div>
+            </div>
+            <div class="MyDetail-back">
+              <div class="backsheet">
+                <div class="col-1">
+                  <!-- <p>ABOUT</p>
+                  <p>關於我</p> -->
+                </div>
+                <div class="col-2">
+                  <p><span style="font-size: 4vw;">Hello!</span></p>
+                  <img src="img/going.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="app-detail">
+            <div class="left-detail">
+              <h3>APP COLLECTIONS</h3>
+              <!-- first column -->
+              <div class="column">
+                <div class="app-item" id="app-1">
+                  <div class="logo">
+                    <img src="img/seatbao.png" alt="" />
+                  </div>
+                  <div class="intro" id="app-intro-1">
+                    <p style="margin-bottom: 5vh; font-weight: bold;">
+                      位置寶
+                    </p>
+                    <p style="font-size: 1vw;">
+                      元智創意APP競賽
+                    </p>
+                    <p style="font-size: 1vw;">
+                      React Native
+                    </p>
+                    <p
+                      id="app-intro-hide-1"
+                      style="font-size: 1vw; opacity: 0;"
+                    >
+                      位置寶是一個管理系統，藉由控管每一個位置的使用狀況，再
+                      加上預約系統，讓想去圖書館的同學不會因為沒有位置而白跑一趟。
+                    </p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+                <div class="app-item" id="app-2">
+                  <div class="logo">
+                    <img src="img/chata.png" alt="" />
+                  </div>
+                  <div class="intro" id="app-intro-2">
+                    <p style="margin-bottom: 5vh; font-weight: bold;">
+                      CHATA
+                    </p>
+                    <p style="font-size: 1vw;">
+                      元智創意APP競賽
+                    </p>
+                    <p style="font-size: 1vw;">
+                      Java(Android)
+                    </p>
+                    <p
+                      id="app-intro-hide-2"
+                      style="font-size: 1vw; opacity: 0;"
+                    >
+                      ChaTa是一個社交軟體，使用者可以透過徵才與抽卡來交換
+                      才藝、認識朋友，相較於其他交友軟體有著能互相學習的特色。
+                    </p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+                <div class="app-item" id="app-3">
+                  <div class="logo">
+                    <img src="img/travelapp-14.png" alt="" />
+                  </div>
+                  <div class="intro" id="app-intro-3">
+                    <p style="margin-bottom: 5vh; font-weight: bold;">
+                      醬遊
+                    </p>
+                    <p style="font-size: 1vw;">
+                      人文慈善APP競賽
+                    </p>
+                    <p style="font-size: 1vw;">Web APP</p>
+                    <p
+                      id="app-intro-hide-3"
+                      style="font-size: 1vw; opacity: 0;"
+                    >
+                      這是一個以輔助旅行團為目的的APP，它能以群組的方式幫助
+                      旅行團的行程更加流暢，在增進領隊的方便性的同時，也能促進團
+                      員間的交流。
+                    </p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+              </div>
+
+              <!-- 
+                <div class="app-item">
+                  <div class="logo">
+                    <img src="img/travelapp-14.png" alt="" />
+                  </div>
+                  <div class="intro">
+                    <p style="margin-bottom: 3vh; font-weight: bold;">醬遊</p>
+                    <p style="font-size: 1vw;">人文慈善APP競賽</p>
+                    <p style="font-size: 1vw;">Web APP</p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+               -->
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="web-detail">
+            <div class="right-detail">
+              <h3>WEB COLLECTIONS</h3>
+              <!-- first column -->
+              <div class="column">
+                <div class="web-item" id="web-1">
+                  <div class="logo">
+                    <img
+                      src="img/camp.jpg"
+                      alt=""
+                      style="height: 30vh; width: 20vw;"
+                    />
+                  </div>
+                  <div class="intro" id="web-intro-1">
+                    <p style="margin-bottom: 5vh; font-weight: bold;">
+                      計分系統
+                    </p>
+                    <p style="font-size: 1vw;">
+                      2018資傳宿營
+                    </p>
+                    <p style="font-size: 1vw;">
+                      WEB
+                    </p>
+                    <p
+                      id="web-intro-hide-1"
+                      style="font-size: 1vw; opacity: 0;"
+                    >
+                      2019宿營計分系統是一個可以利用序號來交易金幣的系統，
+                      每個小隊成員不僅可以看到自己小隊的成員，也可以看到小隊目
+                      前有多少金幣，而工作人員則可以看到所有小隊的金幣數量。
+                    </p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+                <div class="web-item" id="web-2">
+                  <div class="logo">
+                    <img src="img/survey.png" alt="" />
+                  </div>
+                  <div class="intro" id="web-intro-2">
+                    <p style="margin-bottom: 5vh; font-weight: bold;">
+                      小畢製分組
+                    </p>
+                    <p style="font-size: 1vw;">
+                      分組網頁
+                    </p>
+                    <p style="font-size: 1vw;">
+                      WEB
+                    </p>
+                    <p
+                      id="web-intro-hide-2"
+                      style="font-size: 1vw; opacity: 0;"
+                    >
+                      在這個網頁中輸入自己的學號姓名和想做的主題，以及想做的
+                      分工項目，甚至是貼上自己作品集的連結，讓更多人可以進一步的
+                      了解你，將所有人的資訊匯集在一個頁面，讓大家可以更好找到組
+                      員喔∼∼∼
+                    </p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+                <div class="web-item" id="web-3">
+                  <div class="logo">
+                    <img
+                      src="img/feetu.png"
+                      alt=""
+                      style="width: 15vw; height: 10vh;"
+                    />
+                  </div>
+                  <div class="intro" id="web-intro-3">
+                    <p style="margin-bottom: 5vh; font-weight: bold;">
+                      FEETU
+                    </p>
+                    <p style="font-size: 1vw;">
+                      網頁CASE
+                    </p>
+                    <p style="font-size: 1vw;">Web</p>
+                    <p
+                      id="web-intro-hide-3"
+                      style="font-size: 1vw; opacity: 0;"
+                    >
+                      這是一款結合球鞋評比以及社群功能的網頁，使用者可以藉由
+                      使用這個網站看到最新的體育新聞，找到最新的球鞋評比，也可以
+                      在上面與其他使用者共同討論。
+                    </p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+              </div>
+
+              <!-- 
+                <div class="app-item">
+                  <div class="logo">
+                    <img src="img/travelapp-14.png" alt="" />
+                  </div>
+                  <div class="intro">
+                    <p style="margin-bottom: 3vh; font-weight: bold;">醬遊</p>
+                    <p style="font-size: 1vw;">人文慈善APP競賽</p>
+                    <p style="font-size: 1vw;">Web APP</p>
+                  </div>
+                  <div class="detail"></div>
+                </div>
+               -->
+            </div>
+          </div>
+        </div>
+        <!-- <div class="section">
+          <div class="game-detail">
+            
+          </div>
+        </div> -->
       </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        //----------------------------------------------------------
+        $("#app-intro-hide-1").hide();
+        $("#app-intro-hide-2").hide();
+        $("#app-intro-hide-3").hide();
+        $("#web-intro-hide-1").hide();
+        $("#web-intro-hide-2").hide();
+        $("#web-intro-hide-3").hide();
+        //app 1 hover and show text
+        $("#app-1").mouseenter(function () {
+          $("#app-intro-hide-2").hide();
+          $("#app-intro-hide-3").hide();
+          $("#app-intro-1 p").hide();
+          $("#app-1 .logo").animate(
+            {
+              opacity: 0,
+              height: 0,
+            },
+            300
+          );
+          $("#app-1 .intro").animate(
+            {
+              height: "50vh",
+            },
+            300,
+            function () {
+              $("#app-intro-hide-1").show();
+              $("#app-intro-hide-1").animate(
+                {
+                  opacity: 1,
+                },
+                100
+              );
+            }
+          );
+        });
+        $("#app-1").mouseleave(function () {
+          $("#app-intro-1 p").show();
+          $("#app-intro-hide-1").hide();
+          $("#app-1 .logo").animate(
+            {
+              opacity: 1,
+              height: "30vh",
+            },
+            300
+          );
+          $("#app-1 .intro").animate(
+            {
+              height: "20vh",
+            },
+            300
+          );
+        });
+        //app 2 hover and show text
+        $("#app-2").mouseenter(function () {
+          $("#app-intro-hide-1").hide();
+          $("#app-intro-hide-3").hide();
+          $("#app-intro-2 p").hide();
+          $("#app-2 .logo").animate(
+            {
+              opacity: 0,
+              height: 0,
+            },
+            300
+          );
+          $("#app-2 .intro").animate(
+            {
+              height: "50vh",
+            },
+            300,
+            function () {
+              $("#app-intro-hide-2").show();
+              $("#app-intro-hide-2").animate({
+                opacity: 1,
+              });
+            }
+          );
+        });
+        $("#app-2").mouseleave(function () {
+          $("#app-intro-2 p").show();
+          $("#app-intro-hide-2").hide();
+          $("#app-2 .logo").animate(
+            {
+              opacity: 1,
+              height: "30vh",
+            },
+            300
+          );
+          $("#app-2 .intro").animate(
+            {
+              height: "20vh",
+            },
+            300
+          );
+        });
+        //app 3 hover and show text
+        $("#app-3").mouseenter(function () {
+          $("#app-intro-hide-1").hide();
+          $("#app-intro-hide-2").hide();
+          $("#app-intro-3 p").hide();
+          $("#app-3 .logo").animate(
+            {
+              opacity: 0,
+              height: 0,
+            },
+            300
+          );
+          $("#app-3 .intro").animate(
+            {
+              height: "50vh",
+            },
+            300,
+            function () {
+              $("#app-intro-hide-3").show();
+              $("#app-intro-hide-3").animate({
+                opacity: 1,
+              });
+            }
+          );
+        });
+        $("#app-3").mouseleave(function () {
+          $("#app-intro-3 p").show();
+          $("#app-intro-hide-3").hide();
+          $("#app-3 .logo").animate(
+            {
+              opacity: 1,
+              height: "30vh",
+            },
+            300
+          );
+          $("#app-3 .intro").animate(
+            {
+              height: "20vh",
+            },
+            300
+          );
+        });
+        //----------------------------------------------------------
+
+        //web 1 hover and show text
+        $("#web-1").mouseenter(function () {
+          $("#web-intro-hide-2").hide();
+          $("#web-intro-hide-3").hide();
+          $("#web-intro-1 p").hide();
+          $("#web-1 .logo").animate(
+            {
+              opacity: 0,
+              height: 0,
+            },
+            300
+          );
+          $("#web-1 .intro").animate(
+            {
+              height: "50vh",
+            },
+            300,
+            function () {
+              $("#web-intro-hide-1").show();
+              $("#web-intro-hide-1").animate(
+                {
+                  opacity: 1,
+                },
+                100
+              );
+            }
+          );
+        });
+        $("#web-1").mouseleave(function () {
+          $("#web-intro-1 p").show();
+          $("#web-intro-hide-1").hide();
+          $("#web-1 .logo").animate(
+            {
+              opacity: 1,
+              height: "30vh",
+            },
+            300
+          );
+          $("#web-1 .intro").animate(
+            {
+              height: "20vh",
+            },
+            300
+          );
+        });
+        //web 2 hover and show text
+        $("#web-2").mouseenter(function () {
+          $("#web-intro-hide-1").hide();
+          $("#web-intro-hide-3").hide();
+          $("#web-intro-2 p").hide();
+          $("#web-2 .logo").animate(
+            {
+              opacity: 0,
+              height: 0,
+            },
+            300
+          );
+          $("#web-2 .intro").animate(
+            {
+              height: "50vh",
+            },
+            300,
+            function () {
+              $("#web-intro-hide-2").show();
+              $("#web-intro-hide-2").animate({
+                opacity: 1,
+              });
+            }
+          );
+        });
+        $("#web-2").mouseleave(function () {
+          $("#web-intro-2 p").show();
+          $("#web-intro-hide-2").hide();
+          $("#web-2 .logo").animate(
+            {
+              opacity: 1,
+              height: "30vh",
+            },
+            300
+          );
+          $("#web-2 .intro").animate(
+            {
+              height: "20vh",
+            },
+            300
+          );
+        });
+        //web 3 hover and show text
+        $("#web-3").hover(
+          function () {
+            $("#web-intro-hide-1").hide();
+            $("#web-intro-hide-2").hide();
+            $("#web-intro-3 p").hide();
+            $("#web-3 .logo").animate(
+              {
+                opacity: 0,
+                height: 0,
+              },
+              300
+            );
+            $("#web-3 .intro").animate(
+              {
+                height: "50vh",
+              },
+              300,
+              function () {
+                $("#web-intro-hide-3").show();
+                $("#web-intro-hide-3").animate({
+                  opacity: 1,
+                });
+              }
+            );
+          },
+          function () {
+            $("#web-intro-3 p").show();
+            $("#web-intro-hide-3").hide();
+            $("#web-3 .logo").animate(
+              {
+                opacity: 1,
+                height: "30vh",
+              },
+              300
+            );
+            $("#web-3 .intro").animate(
+              {
+                height: "20vh",
+              },
+              300
+            );
+          }
+        );
+
+        //----------------------------------------------------------
+
+        $(function () {
+          $("#dowebok").fullpage({
+            anchors: ["firstPage", "secondPage", "thirdPage", "fourthPage"],
+          });
+        });
+        //-----------------------------
+        //typing effect
+        var content =
+          "我叫簡琮育，我出生在台灣的南部 - 台南市，現在在桃園就讀元智大學資訊傳播學系，夢想成為獨當一面的工程師，我相信只要保有熱忱，繼續做我喜歡的事，這個未來就不是夢想。";
+
+        var ele =
+          "<span>" + content.split("").join("</span><span>") + "</span>";
+
+        $(ele)
+          .hide()
+          .appendTo(".backsheet .col-2 p")
+          .each(function (i) {
+            $(this)
+              .delay(50 * i)
+              .css({
+                display: "inline",
+                opacity: 0,
+              })
+              .animate(
+                {
+                  opacity: 1,
+                },
+                100
+              );
+          });
+        //-----------------------------
+      });
+    </script>
   </body>
 </html>
